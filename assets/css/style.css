@@ -164,6 +164,24 @@ header a:hover{
     background-position: center center;
 }
 
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://th.bing.com/th/id/R.c85dbc52ab8ac9f0005472c068e0baaa?rik=EbGDCOgaw7Y0iA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-tL3TCdj0iho%2fUPWBWHsTTyI%2fAAAAAAAAzRY%2fq6szJr76ZTE%2fs1600%2fNissan-Skyline-R34-GT-R-1920x1080_Fondos-de-Pantalla-de-Carros-Deportivos.jpg&ehk=cQ4BcHm9GxwBH3N0I5JcV%2fYbF3KOcp2qOsNR7Y3Cvsc%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 #hero h1{
     color: white;
 }
@@ -362,7 +380,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/full-stack-cropped.jpg");
+        ,url("https://www.timesclub.jp/dynamic/images/inspection/factory/124_3.jpg");
     }
 
     .carta:nth-child(3){
@@ -371,7 +389,7 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("media/python-cropped.jpg");
+        ,url("https://th.bing.com/th/id/OIP.j8hTjXWWJTAbRHawQ753cQHaEK?pid=ImgDet&rs=1");
 
     }
 
