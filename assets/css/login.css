@@ -76,3 +76,9 @@ body{
   line-height: 20px;
   color: darkgray;
 }
+
+.login-box a:hover{
+  color: red
+}
+
+
