@@ -3,33 +3,34 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Login</title> 
+        <title>Form Login</title> 
         <link href="./assets/css/login.css" rel="stylesheet">
     </head>
     <body>
-      <div class="login-page">
-        <h2>Rayo makween</h2>
-        <div class="form">
-          <form class="register-form">
-            <input type="text" placeholder="name"/>
-            <input type="password" placeholder="password"/>
-            <input type="text" placeholder="email address"/>
-            <button>create</button>
-            <p class="message">¿Ya tienes cuenta? <a href="#">Inicia sesion</a></p>
-          </form>
-          <form class="login-form">
-            <input type="text" placeholder="Nombre de usuario"/>
-            <input type="password" placeholder="Contraseña"/>
-            <a href="/index.html">
-              <span> 
-                
-              Ingresar a la pagina
-                
-              </span>
-            </a>
-            <p class="message">¿No estas registrado? <a href="#">Create una cuenta</a></p>
-          </form>
-        </div>
+
+
+      <div class="login-box">
+        <img  class="avatar" src="./assets/img/LogoEmpresa.png" alt="Logo de Taller RayoMakween">  
+        <h1> Iniciar Sesion</h1> 
+        <form>
+          <!-- USERNAME -->
+          <label for="username">Nombre de usuario</label>
+          <input type="text" placeholder="Escribre tu Nombre de usuario">
+
+
+          <!-- PASSWORD -->
+          <label for="password">Contraseña</label>
+          <input type="password" placeholder="Escribre tu Contraseña">
+
+          <input type="submit" value="Log in">
+
+          <a href="#">¿Olvidaste tu contraseña?</a><br>
+          <a href="#">¿Aun no tienes una cuenta?</a>
+
+        </form>
+
       </div>
+      
+      
     </body>
 </html>
