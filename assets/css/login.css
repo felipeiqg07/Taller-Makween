@@ -1,10 +1,10 @@
 body{
   margin: 0;
   padding: 0;
-  background: url(../img/fondo_login.jpg) no-repeat center top;
+  background: url(../img/image_6.jpg)  center top;
   background-size: cover;
   font-family: sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 
 .login-box{

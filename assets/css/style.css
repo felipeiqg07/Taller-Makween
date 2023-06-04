@@ -133,18 +133,8 @@ header a:hover{
 }
 
 
-#imagenpiola{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("https://th.bing.com/th/id/R.4a3db399de4f6cef16e55be5160c548e?rik=EJdvOnI6uJM8lg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-NO-uDPKCfQU%2fUK1R6WlgPhI%2fAAAAAAAAAXY%2foIEVdXS63tU%2fs1600%2fSin%2bt%c3%adtulo.jpg&ehk=gj2luaQo%2fMce6QPzHMVbYUJvyDY583GmW48fggoZKXo%3d&risl=&pid=ImgRaw&r=0");
-}
 
-#imagenpiola h1{
-    color: white;
-}
+
 
 #hero{
     display: flex;
@@ -158,7 +148,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("https://th.bing.com/th/id/R.793c55131d8d0e6748300855216a311c?rik=qv%2frouNBXNvUFg&riu=http%3a%2f%2fwww.ktl-co.com%2fimages%2fdealers%2fdealership%2fimg05.jpg&ehk=Z1fvJAZrw5xOV%2bXYfnBhWfmZZz1a6t8ysoM31CFo1IY%3d&risl=&pid=ImgRaw&r=0");
+    ,url("../img/image_4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -176,7 +166,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("https://th.bing.com/th/id/R.c85dbc52ab8ac9f0005472c068e0baaa?rik=EbGDCOgaw7Y0iA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-tL3TCdj0iho%2fUPWBWHsTTyI%2fAAAAAAAAzRY%2fq6szJr76ZTE%2fs1600%2fNissan-Skyline-R34-GT-R-1920x1080_Fondos-de-Pantalla-de-Carros-Deportivos.jpg&ehk=cQ4BcHm9GxwBH3N0I5JcV%2fYbF3KOcp2qOsNR7Y3Cvsc%3d&risl=&pid=ImgRaw&r=0");
+    ,url("../img/image_final.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -330,7 +320,7 @@ footer .container{
     }
 
     #somos-proya .img-container{
-        background-image: url("../img/LogoEmpresa.png");
+        background-image: url("../img/LogoEmpresa_2.png");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -364,13 +354,14 @@ footer .container{
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     }
 
+    
     .carta:first-child{
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("https://th.bing.com/th/id/R.4a3db399de4f6cef16e55be5160c548e?rik=EJdvOnI6uJM8lg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-NO-uDPKCfQU%2fUK1R6WlgPhI%2fAAAAAAAAAXY%2foIEVdXS63tU%2fs1600%2fSin%2bt%c3%adtulo.jpg&ehk=gj2luaQo%2fMce6QPzHMVbYUJvyDY583GmW48fggoZKXo%3d&risl=&pid=ImgRaw&r=0");
+        ,url("../img/image_tarjeta.jfif");
 
     }
 
@@ -380,8 +371,8 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("https://www.timesclub.jp/dynamic/images/inspection/factory/124_3.jpg");
-    }
+        ,url("../img/image_tarjeta_3.jpg");
+    }   
 
     .carta:nth-child(3){
         background-image: linear-gradient(
@@ -389,12 +380,12 @@ footer .container{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("https://th.bing.com/th/id/OIP.j8hTjXWWJTAbRHawQ753cQHaEK?pid=ImgDet&rs=1");
+        ,url("../img/image_tarjeta_2.jfif");
 
     }
 
     #caracteristicas{
-        background-image: url("https://th.bing.com/th/id/OIP.hpaqaJBbRTiEucUuKkdFUgHaE7?pid=ImgDet&w=800&h=533&rs=1");
+        background-image: url("../img/image_5.jfif");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 500px) 120px;
