@@ -1,55 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precios</title>
-    <link rel="stylesheet" href="./assets/css/precios.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios Hotel</title>
+  <link rel="stylesheet" href="./assets/css/precios.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
-<header>    
-    <div class="logo">
-      <img src="./assets/img/LogoEmpresa.png" alt="Logo de la Compania">
-      <h2 class="nombre-empresa">Hotel VERANUM</h2>
-  </div>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body>
+  
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">[ Iniciar Sesion ]</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#final">[ Registro ]</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/precios.html">[ Precios ]</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#somos-proya">[ Sobre Nosotros ]</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nuestros-programas">[ Servicios ]</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">[ Nuestra Galeria ]</a>
-            </li>
-          </ul>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="check" viewBox="0 0 16 16">
+  <title>Check</title>
+  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</symbol>
+</svg>
+
+<div class="container py-3">
+<header>
+  <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+      <img  href="./assets/img/LogoEmpresa.png" width="40" height="32" > </img>
+      <span class="fs-4">Hotel VERANUM</span>
+    </a>
+
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+      <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="./index.html">Inicio</a>
+      <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="./registro.html">Registrarse</a>
+      <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="./login.html">Iniciar Sesion</a>
+
+    </nav>
+  </div>
+
+  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal text-body-emphasis">Habitaciones</h1>
+    <p class="fs-5 text-body-secondary">Tenemos estos precios para usted y su familia (el precio es por persona)</p>
+    <br>
+    <p>(Menores de 4 años la entreda es gratis)</p>
+  </div>
+</header>
+
+  <main>
+    <section id="como">
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Habitacion A</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$30.000 <small class="text-body-secondary fw-light">/24hrs</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 habitacion  con cama matrimonial</li>
+              <li>1 baño privado</li>
+              <li>1 comedor</li>
+              <li>1 living de 5 metros cuadrados</li>
+              <br>
+              <br>
+              <br>
+              <br>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Reservar Aca</button>
+          </div>
         </div>
       </div>
-    </nav>
-    <nav class="navbar bg-body-tertiary">
-       
-    </nav>
-    </header>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Habitacion B</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$50.000<small class="text-body-secondary fw-light">/24hrs</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>2 habitaciones [1 matrimonial y 1 simple]</li>
+              <li>2 baños privados [cada uno en las habitaciones]</li>
+              <li>1 comedor [incluye cocina]</li>
+              <li>1 living de 10 metros cuadrados</li>
+              <li>Primer desayuno es gratis</li>
+              <br>
+              <br>
+              <br>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Reservar Aca</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Habitacion VIP</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$100.000<small class="text-body-secondary fw-light">/24hrs</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>3 habitaciones [2 matrimoniales y 1 simple]</li>
+              <li>4 baños privados [1 en living y los demas en habitaciones]</li>
+              <li>1 comedor [incluye cocina]</li>
+              <li>Terraza con sillones y television</li>
+              <li>Primeros 24hrs comida gratis</li>
+              <li>Acceso a casino</li>
+              <li>Show Exclusivos para VIP</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Reservar Aca</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<body>
+    <section id="caracteristicas_precios">
+      <div class="container">
+        <ul>
+              <li>✔️ Buenos Precios</li>
+              <li>✔️ Calidad 5 estrellas ⭐⭐⭐⭐⭐</li>
+              <li>✔️ Puedes Pagar Con Cuotas Sin Intereses</li>
+              <li>✔️ Reservas Online</li>
+          </ul>
+      </div>
+  </section>
+
+  </main>
+
+  <footer id="main-footer">
+		<p>&copy; 1993-2023 <a href="#">Hotel VERANUM</a></p>
+	</footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 
 </body>
 </html>
